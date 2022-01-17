@@ -1,9 +1,10 @@
 package test
 
 import (
+	"testing"
+
 	"github.com/ttlv/kdniao"
 	"github.com/ttlv/kdniao/sdk"
-	"testing"
 )
 
 func TestMonitorSubscribe(t *testing.T) {
@@ -12,7 +13,7 @@ func TestMonitorSubscribe(t *testing.T) {
 		t.Error("err", err)
 		return
 	}
-	logger := kdniaoGo.NewKdniaoLogger()
+	logger := kdniao.NewKdniaoLogger()
 
 	apiMonitorSubscribeSdk := sdk.NewApiMonitorSubscribe(config, logger)
 	req := apiMonitorSubscribeSdk.GetRequest("4303618027892", "YD")

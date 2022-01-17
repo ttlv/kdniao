@@ -1,9 +1,10 @@
 package test
 
 import (
+	"testing"
+
 	"github.com/ttlv/kdniao"
 	"github.com/ttlv/kdniao/sdk"
-	"testing"
 )
 
 func TestRecognise(t *testing.T) {
@@ -12,10 +13,10 @@ func TestRecognise(t *testing.T) {
 		t.Error("err", err)
 		return
 	}
-	logger := kdniaoGo.NewKdniaoLogger()
+	logger := kdniao.NewKdniaoLogger()
 
 	apiRecogniseSdk := sdk.NewApiRecognise(config, logger)
-	req := apiRecogniseSdk.GetRequest("550000609031770")
+	req := apiRecogniseSdk.GetRequest("JDVB10958632214")
 	resp, err := apiRecogniseSdk.GetResponse(req)
 	if err != nil {
 		t.Error("err", err)

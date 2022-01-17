@@ -1,4 +1,4 @@
-package kdniaoGo
+package kdniao
 
 import (
 	"log"

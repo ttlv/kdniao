@@ -12,16 +12,16 @@ import (
 	`github.com/ttlv/kdniao/util/http`
 )
 
-func NewExpressQuery(config kdniaoGo.KdniaoConfig, logger kdniaoGo.KdniaoLoggerInterface) ApiExpressQuery {
+func NewExpressQuery(config kdniao.KdniaoConfig, logger kdniao.KdniaoLoggerInterface) ApiExpressQuery {
 	return ApiExpressQuery{config, logger}
 }
 
 type ApiExpressQuery struct {
-	config kdniaoGo.KdniaoConfig
-	logger kdniaoGo.KdniaoLoggerInterface
+	config kdniao.KdniaoConfig
+	logger kdniao.KdniaoLoggerInterface
 }
 
-func (obj ApiExpressQuery) GetRequest(logisticCode, shipperCode string) request.ExpressQueryRequest {
+func (obj ApiExpressQuery) GetRequest(logisticCode string) request.ExpressQueryRequest {
 	req := request.NewExpressQueryRequest()
 	req.SetConfig(obj.config)
 	req.SetLogisticCode(logisticCode)

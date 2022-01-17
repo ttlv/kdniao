@@ -1,4 +1,4 @@
-package kdniaoGo
+package kdniao
 
 func NewKdniaoConfig(eBusinessId, appKey string) KdniaoConfig {
 	kdniaoConfig := KdniaoConfig{}

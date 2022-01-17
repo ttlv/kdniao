@@ -11,13 +11,13 @@ import (
 	"strconv"
 )
 
-func NewApiMonitorSubscribe(config kdniaoGo.KdniaoConfig, logger kdniaoGo.KdniaoLoggerInterface) ApiMonitorSubscribe {
+func NewApiMonitorSubscribe(config kdniao.KdniaoConfig, logger kdniao.KdniaoLoggerInterface) ApiMonitorSubscribe {
 	return ApiMonitorSubscribe{config, logger}
 }
 
 type ApiMonitorSubscribe struct {
-	config kdniaoGo.KdniaoConfig
-	logger kdniaoGo.KdniaoLoggerInterface
+	config kdniao.KdniaoConfig
+	logger kdniao.KdniaoLoggerInterface
 }
 
 func (obj ApiMonitorSubscribe) GetRequest(logisticCode, shipperCode string) request.MonitorSubscribeRequest {

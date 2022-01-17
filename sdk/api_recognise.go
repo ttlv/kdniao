@@ -11,13 +11,13 @@ import (
 	"strconv"
 )
 
-func NewApiRecognise(config kdniaoGo.KdniaoConfig, logger kdniaoGo.KdniaoLoggerInterface) ApiRecognise {
+func NewApiRecognise(config kdniao.KdniaoConfig, logger kdniao.KdniaoLoggerInterface) ApiRecognise {
 	return ApiRecognise{config, logger}
 }
 
 type ApiRecognise struct {
-	config kdniaoGo.KdniaoConfig
-	logger kdniaoGo.KdniaoLoggerInterface
+	config kdniao.KdniaoConfig
+	logger kdniao.KdniaoLoggerInterface
 }
 
 func (obj ApiRecognise) GetRequest(logisticCode string) request.RecogniseRequest {

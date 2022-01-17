@@ -2,18 +2,19 @@ package test
 
 import (
 	"errors"
+	"strings"
+
 	"github.com/ttlv/kdniao"
 	"github.com/ttlv/kdniao/util"
-	"strings"
 )
 
-func getConfig() (kdniaoGo.KdniaoConfig, error) {
+func getConfig() (kdniao.KdniaoConfig, error) {
 	eBusinessId, appKey, err := getConfigValue()
-	return kdniaoGo.NewKdniaoConfig(eBusinessId, appKey), err
+	return kdniao.NewKdniaoConfig(eBusinessId, appKey), err
 }
 
 func getConfigValue() (string, string, error) {
-	configStr, err := util.FileGetContents("../config.txt")
+	configStr, err := util.FileGetContents("./config.txt")
 	if err != nil {
 		return "", "", err
 	}
@@ -21,5 +22,5 @@ func getConfigValue() (string, string, error) {
 	if 2 != len(configs) {
 		return "", "", errors.New("eBusinessId or appKey is empty")
 	}
-	return configs[0], configs[1], nil
+	return strings.TrimSpace(configs[0]), strings.TrimSpace(configs[1]), nil
 }

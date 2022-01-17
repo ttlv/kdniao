@@ -1,4 +1,4 @@
-# kdniaoGo
+# kdniao
 快递鸟 SDK Go 语言版
 
 ## Requirements
