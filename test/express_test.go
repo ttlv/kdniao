@@ -1,8 +1,9 @@
 package test
 
 import (
-	"github.com/ttlv/kdniao/data"
 	"testing"
+
+	"github.com/ttlv/kdniao/data"
 )
 
 func TestExpressGetList(t *testing.T) {
