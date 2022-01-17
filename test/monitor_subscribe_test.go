@@ -1,8 +1,8 @@
 package test
 
 import (
-	"github.com/ttlv/kdniaoGo"
-	"github.com/ttlv/kdniaoGo/sdk"
+	"github.com/ttlv/kdniao"
+	"github.com/ttlv/kdniao/sdk"
 	"testing"
 )
 

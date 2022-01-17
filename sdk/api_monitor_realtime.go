@@ -2,12 +2,12 @@ package sdk
 
 import (
 	"encoding/json"
-	"github.com/ttlv/kdniaoGo"
-	"github.com/ttlv/kdniaoGo/enum"
-	"github.com/ttlv/kdniaoGo/request"
-	"github.com/ttlv/kdniaoGo/response"
-	"github.com/ttlv/kdniaoGo/util"
-	"github.com/ttlv/kdniaoGo/util/http"
+	"github.com/ttlv/kdniao"
+	"github.com/ttlv/kdniao/enum"
+	"github.com/ttlv/kdniao/request"
+	"github.com/ttlv/kdniao/response"
+	"github.com/ttlv/kdniao/util"
+	"github.com/ttlv/kdniao/util/http"
 	"strconv"
 )
 

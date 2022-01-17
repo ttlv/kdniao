@@ -2,8 +2,8 @@ package request
 
 import (
 	"encoding/base64"
-	"github.com/ttlv/kdniaoGo"
-	"github.com/ttlv/kdniaoGo/util"
+	"github.com/ttlv/kdniao"
+	"github.com/ttlv/kdniao/util"
 	"net/url"
 )
 

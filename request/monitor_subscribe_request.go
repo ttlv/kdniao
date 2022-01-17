@@ -2,7 +2,7 @@ package request
 
 import (
 	"encoding/json"
-	"github.com/ttlv/kdniaoGo/enum"
+	"github.com/ttlv/kdniao/enum"
 )
 
 func NewMonitorSubscribeRequest() MonitorSubscribeRequest {
